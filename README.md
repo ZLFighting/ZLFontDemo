@@ -13,22 +13,22 @@ iOS-使用添加的花样字体
 ##Step1. 将字体库添加到项目中
 字体库截图如下, 可以根据自己需要的哪些字体添加到项目中.
 
-![](https://github.com/ZLFighting/ZLFontDemo/blob/master/ZLFontDemo/ZLFontDemo/Images/2.png)
+![](https://github.com/ZLFighting/ZLFontDemo/blob/master/ZLFontDemo/ZLFontDemo/Images/2.jpeg)
 
 ##Step2. 在info.plist中添加所需新字体.
 这里我用一个UniversLTStd-UltraCn.otf文件做测试:
 
-![](https://github.com/ZLFighting/ZLFontDemo/blob/master/ZLFontDemo/ZLFontDemo/Images/3.png)
+![](https://github.com/ZLFighting/ZLFontDemo/blob/master/ZLFontDemo/ZLFontDemo/Images/3.jpeg)
 
 确保能找到资源, 检查下在**target-->Build Phases-->Copy Bundle Resources**中将info.plist中是否添加上所需字体.
 
-![](https://github.com/ZLFighting/ZLFontDemo/blob/master/ZLFontDemo/ZLFontDemo/Images/4.png)
+![](https://github.com/ZLFighting/ZLFontDemo/blob/master/ZLFontDemo/ZLFontDemo/Images/4.jpeg)
 
 ##Step3. 找到真实可用的fontName
 
 要先找到fontName 就需要先找到familyName, 而familyName是通过我们字体库的文件去找到: 双击字体库打开，系统会默认使用字体册进行打开。这时候状态栏上面显示的是真实的familyName。如下图所示:
 
-![4C38E171-7851-4ACC-A8C6-AA33526B6192.png](https://github.com/ZLFighting/ZLFontDemo/blob/master/ZLFontDemo/ZLFontDemo/Images/5.png)
+![4C38E171-7851-4ACC-A8C6-AA33526B6192.png](https://github.com/ZLFighting/ZLFontDemo/blob/master/ZLFontDemo/ZLFontDemo/Images/5.jpeg)
 
 有了familyName, 则相对应找到fontName就好! 通过上面的循环打印结果，在控制台搜索出相对应的结果即可.
 ```
@@ -53,7 +53,7 @@ NSLog(@"=====");
 }
 ```
 控制台截图如下:
-![](https://github.com/ZLFighting/ZLFontDemo/blob/master/ZLFontDemo/ZLFontDemo/Images/6.png)
+![](https://github.com/ZLFighting/ZLFontDemo/blob/master/ZLFontDemo/ZLFontDemo/Images/6.jpeg)
 
 项目中在所需位置使用`fontWithName: size:`
 ```
